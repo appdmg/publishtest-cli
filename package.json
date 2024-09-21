@@ -5,5 +5,8 @@
   "bin": {
     "publishtest-cli": "bin/index.js"
   },
+  "repository": {
+    "url": "https://github.com/appdmg/publishtest-cli"
+  },
   "dependencies": {}
 }
