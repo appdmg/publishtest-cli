@@ -1,0 +1,32 @@
+name: build
+
+on:
+  push:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: npm ci
+        run: npm ci
+
+      - name: npm pack
+        run: npm pack
+
+      - name: upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: publishtest-cli
+          path: '*.tgz'
