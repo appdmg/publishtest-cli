@@ -1,5 +1,5 @@
 {
-  "name": "publishtest-cli",
+  "name": "@appdmg/publishtest-cli",
   "version": "1.0.0",
   "description": "A simple CLI tool that writes \"Hello World\" to the console.",
   "bin": {
