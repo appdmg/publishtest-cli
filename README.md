@@ -5,7 +5,7 @@
 To install the CLI tool globally, run the following command:
 
 ```sh
-npm install -g publishtest-cli
+npm install -g @appdmg/publishtest-cli
 ```
 
 ## Usage
